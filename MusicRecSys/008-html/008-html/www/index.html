@@ -1,0 +1,46 @@
+<html>
+
+<head>
+  <script src="shared/jquery.js" type="text/javascript"></script>
+  <script src="shared/shiny.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="shared/shiny.css"/> 
+</head>
+ 
+<body>
+
+  <h1>Yahoo Music Recommendation System</h1>
+ 
+ <input type="radio" name="sex" value="male" checked>Male
+  <br>
+  <input type="radio" name="sex" value="female">Female
+ <p>
+    <label>Search Song by:</label><br />
+    <select name="dist">
+	  <option value="user">Users id</option>
+      <option value="norm">Song</option>
+      <option value="rating">Rating</option>
+    
+      <option value="exp">Exponential</option>
+    </select> 
+  </p>
+  <p>
+  
+    <label id="summary1">Search Song</label>
+	  <pre id="typeofdrop1" class="shiny-text-output"></pre> 
+   
+   
+	<input type="text" name="t" value="" min="1" max="1000" />
+
+  </p>
+ 
+
+ 
+ 
+  <pre id="summary1" class="shiny-text-output"></pre> 
+ 
+  
+  <div id="table" class="shiny-html-output"></div>
+    <div id="table1" class="shiny-html-output"></div>
+ 
+</body>
+</html>
